@@ -33,3 +33,7 @@ toggleModal(forgetPassword, 'hidden');
 toggleModal(subMenuItem, 'hidden');
 toggleModal(iconCloseModal, 'auto');
 toggleModal(btnCloseModal, 'auto');
+
+const onLogin = () => {
+  window.location.href = './dashboard/dashboard.html';
+}
