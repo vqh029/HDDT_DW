@@ -1,0 +1,400 @@
+@import url(
+    'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&&family=Pacifico&family=Archivo+Narrow:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-blue: #4e97e1;
+    --secondary-blue: #3579db;
+    --dark-blue: #2273C5;
+    --orange: #fd8f28;
+    --light-blue: #f3f8fd;
+    --light-black: #343434;
+    --light-blue-gray: #f5f8ff;
+    --light-white: #f8f9fa;
+    --gray: #E5E5E5;
+    --light-gray: #f7f7f7;
+    --light-red: #ff5656;
+    --light-green: #61ff5e;
+    --dark-green: #26cc23;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    line-height: 1.5;
+    background-color: var(--gray);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--light-black);
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+/* <--------------------------- CSS for NAVBAR --------------------------->*/
+#navbar{
+    position: fixed;
+    height: 70px;
+    width: calc(100% - 272px);
+    background-color: white;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: 0 4px 4px rgb(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: end;
+    padding: 10px 12px;
+}
+
+#navbar .navbar-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menu .menu-bar{
+    display: flex;
+    list-style-type: none;
+    color: var(--secondary-blue);
+}
+
+.menu-bar .menu-item{
+    padding: 12px;
+    margin-right: 8px;
+    height: 45px;
+    background-color: var(--light-gray);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-item .home, .menu-item .home:visited{
+    color: var(--secondary-blue);
+    text-decoration: none;
+}
+
+.menu-item .user-account{
+    display: flex;
+    align-items: center;
+}
+
+.user-account .name-user{
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.user-account .icon-dropdown-user{
+    margin-left: 8px;
+}
+
+
+/* <--------------------------- CSS for MENU ASIDE --------------------------->*/
+#sidebar{
+    width: 272px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 2;
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0 , 0.15);
+}
+
+#sidebar.open{
+    width: 272px;
+}
+
+.sidebar-container{
+    padding: 0 6px;
+}
+
+.sidebar-detail .sidebar-logo{
+    display: flex;
+    padding: 4px;
+    user-select: none;
+    position: relative;
+}
+
+.sidebar-detail hr{
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.sidebar-logo .sidebar-slogan{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-blue);
+}
+
+.sidebar-slogan .company{
+    font-size: 16px;
+}
+
+.sidebar-slogan .slogan{
+    color: var(--light-red);
+}
+
+.sidebar-detail .sidebar-body{
+    margin-top: 15px;
+}
+
+.sidebar-body .sidebar-list{
+    list-style-type: none;
+    margin: 0 15px;
+    margin-top: 15px;
+}
+
+.sidebar-list .list-item{
+    padding: 16px 20px;
+}
+
+.list-item .side-item-name{
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+.list-item .side-item-icon{
+   color: var(--secondary-blue);
+    font-size: 20px;
+}
+
+.sidebar-list li a, .sidebar-list li i{
+    transition: all 0.25s ease;
+    text-decoration: none;
+}
+
+.sidebar-list li a{
+    color: var(--light-black);
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 0;
+    padding-right: 32px;
+    position: relative;
+    z-index: 1;
+}
+
+.sidebar-list .list-item:hover{
+    color: white;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--secondary-blue);
+    cursor: pointer;
+}
+
+.sidebar-list .list-item:hover>i, .sidebar-list .list-item:hover>a{
+    color: white;
+}
+
+.sidebar-list li:active>a, .sidebar-list li:active{
+    color: white;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--secondary-blue);
+}
+
+/* <--------------------------- CSS for BODY --------------------------->*/
+
+/* <--------------------------- CSS for BODY-UPLOAD --------------------------->*/
+#body{
+    width: 100%;
+    height: 100%;
+    padding: 100px 30px 20px 302px;
+}
+
+#body .body-container{
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    background-color: white;
+}
+
+.body-container .body-detail{
+    padding: 20px;
+}
+
+.body-detail hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.body-upload .form-upload-file{
+    display: flex;
+}
+
+.form-upload-file .group-search{
+    display: flex;
+    flex-direction: column;
+}
+
+.group-search #upload{
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+/* <--------------------------- CSS for BODY-IFRAME --------------------------->*/
+.modal-iframe-hd{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.5); 
+    display: none;
+}
+
+.modal-iframe-hd.open{
+    display: block;
+}
+
+.modal-iframe-hd .modal-iframe-container{
+    max-width: 900px;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: none;
+    box-shadow: 0 5px 20px 0 rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    position: relative;
+}
+
+.modal-iframe-hd .close-modal-hd{
+    float: right;
+    margin-top: -16px;
+    margin-right: -9px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal-iframe-container .modal-iframe-inner{
+    padding: 10px;
+}
+
+.modal-iframe-container hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.modal-iframe-container .modal-iframe-footer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 16px;
+    padding-top: 6px;
+}
+
+.modal-iframe-footer button{
+    padding: 8px 14px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.modal-iframe-footer #btn-print-inv{
+    margin-right: 24px;
+    background-color: var(--secondary-blue);
+}
+
+.modal-iframe-footer #btn-print-inv:hover{
+    box-shadow: 0 8px 20px -8px rgb(78, 151, 255, .85);
+}
+
+.modal-iframe-footer #btn-download-inv{
+    background-color: var(--dark-green);
+}
+
+.modal-iframe-footer #btn-download-inv:hover{
+    box-shadow: 0 8px 20px -8px rgb(38, 204, 35, .85);
+}
+
+.modal-iframe-inner iframe{
+    width: 100%;
+    height: 700px;
+}
+
+/* <--------------------------- CSS for BODY-CONTENT-FILE --------------------------->*/
+.body-detail .body-brief-file{
+    margin-top: 40px;
+}
+
+.table-detail .table-title{
+    background-color: var(--light-blue-gray);
+}
+
+.table-detail table{
+    width: 100%;
+}
+
+.table-detail .table-title th{
+    padding: 4px 8px;
+    text-align: center;
+}
+
+.table-detail .table-brief-content td{
+    font-size: 14px;
+    padding: 4px 8px;
+    text-align: center;
+}
+
+/* <--------------------------- CSS for BODY-ACCOUNT-MANAGER --------------------------->*/
+.body-detail .body-heading{
+    color: var(--secondary-blue);
+}
+
+.body-account-manager{
+    width: 100%;
+}
+
+.body-account-manager .detail-account-manager{
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row;
+}
+
+.detail-account-manager .detail-account-col{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+    padding: 8px;
+}
+
+.account-userName, .account-userID, .account-userPhone, 
+.account-userAddress, .account-userContract{
+    display: inline-flex;
+}
+
+.col-acc-01 .account-label{
+    width: 120px;
+}
+
+.col-acc-02 .account-label{
+    width: 60px;
+}
+
+.detail-account-col .account-label{
+    color: var(--secondary-blue);
+    font-weight: 500;
+    margin-right: 10px;
+    margin-bottom: 24px;
+}
