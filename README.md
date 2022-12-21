@@ -1,2 +1,2 @@
 # HDDT_DW
-HTML + CSS +JS
+Thuần HTML + CSS +JS
