@@ -56,17 +56,12 @@
                   </li>
                   <li>
                     <a class="sub-menu-item" data-modal="modal-in-hd"
-                      >In Hóa Đơn Chuyển Đổi</a
+                      >In Hóa Đơn</a
                     >
                   </li>
                   <li>
                     <a class="sub-menu-item" data-modal="modal-tai-hd"
                       >Tải Hóa Đơn Gốc</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./dashboard/asset/soft/EInvoiceViewer.rar"
-                      >Phần Mềm Xem Hóa Đơn</a
                     >
                   </li>
                 </ul>
@@ -94,7 +89,7 @@
 
         <div class="content-title">
           <div class="content-title-heading">
-            <h3>TRA CỨU HÓA ĐƠN ĐIỆN TỬ</h3>
+            <h3>ĐĂNG NHẬP HỆ THỐNG</h3>
           </div>
         </div>
 
@@ -227,7 +222,11 @@
               <span>(1)</span>
               <a
                 class="btn btn-a"
-                style="width: 100%; margin-left: 10px; background-color: rgb(255, 127, 80)"
+                style="
+                  width: 100%;
+                  margin-left: 10px;
+                  background-color: rgb(255, 127, 80);
+                "
                 href="https://hddt-old.dawaco.com.vn/Login.aspx?ReturnUrl=%2f"
                 >Tra cứu hóa đơn từ 31/12/2022 trở về trước</a
               >
@@ -267,33 +266,43 @@
 
           <img
             class="guide-row"
-            src="./dashboard/asset/img/hd01.png"
+            src="./dashboard/asset/img/hdmodal1.PNG"
             alt=""
             style="width: 100%"
           />
 
-          <p class="guide-row">
+          <p>
             Sau khi đăng nhập thành công, quý khách hàng lựa chọn tháng cần xem
-            hóa đơn/thông báo thanh toán tiền nước và click vào "Tìm kiếm hóa
-            đơn"
+            hóa đơn/thông báo thanh toán tiền nước và click vào biểu tượng kính
+            lúp.
           </p>
 
           <img
             class="guide-row"
-            src="./dashboard/asset/img/hd02.jpg"
+            src="./dashboard/asset/img/hdportal11.png"
             alt=""
             style="width: 100%"
           />
 
-          <p class="guide-row">
-            Trên danh sách hóa đơn hiện thị ra, quý khác hàng click vào biểu
-            tượng "Xem hóa đơn" để xem chi tiết nội dung hóa đơn/thống báo thanh
-            toán tiền nước.
+          <p>
+            Trên danh sách hóa đơn hiển thị ra, các dòng hóa đơn đều có các nút
+            hành động, bao gồm:
+            <p>
+                <i class="fa-solid fa-eye" style="color: #007bff; border-color: #007bff;"></i> - <span>Xem hóa đơn</span>
+                <i class="fa-solid fa-download" style="color: #007bff; border-color: #007bff; margin-left: 10px;"></i> - <span>Tải xml</span>
+                <i class="fa-regular fa-file-pdf" style="color: #007bff; border-color: #007bff; margin-left: 10px;"></i> - <span>Tải pdf</span>
+                <i class="fa-solid fa-print" style="color: #007bff; border-color: #007bff; margin-left: 10px;"></i> - <span>In hóa đơn</span>
+            </p>
+          </p>
+
+          <p>
+            Quý khách hàng click vào biểu tượng "Xem hóa đơn" để xem chi tiết
+            nội dung hóa đơn/thông báo thanh toán tiền nước.
           </p>
 
           <img
             class="guide-row"
-            src="./dashboard/asset/img/hd03.jpg"
+            src="./dashboard/asset/img/hdportal14.png"
             alt=""
             style="width: 100%"
           />
@@ -307,65 +316,10 @@
       </div>
     </div>
 
-    <div id="modal-in-hd" class="modal">
-      <div class="modal-container">
-        <div class="modal-header">
-          <h5 class="modal-title">Hướng dẫn In hóa đơn điện tử</h5>
-          <i
-            class="fa-solid fa-xmark icon-close-modal"
-            data-modal="modal-in-hd"
-          ></i>
-        </div>
-
-        <div class="modal-content">
-          <p class="guide-row">
-            Chức năng áp dụng với hóa đơn
-            <span style="font-weight: 600">đã thanh toán tiền</span>. Để in hóa
-            đơn chuyển đổi lưu trữ, ở chức năng xem hóa đơn quý khách hàng click
-            vào "IN HÓA ĐƠN CHUYỂN ĐỔI"
-          </p>
-
-          <img
-            class="guide-row"
-            src="./dashboard/asset/img/hd03.jpg"
-            alt=""
-            style="width: 100%"
-          />
-
-          <p class="guide-row">
-            Ở form in hóa đơn hiện ra, quý khách lựa chọn máy in hiện tại. Sau
-            đó chọn vào "More Setting" -> "Background Graphics". Sau đó click
-            vào Print để in hóa đơn ra giấy.
-          </p>
-
-          <img
-            class="guide-row"
-            src="./dashboard/asset/img/hd04.jpg"
-            alt=""
-            style="width: 100%"
-          />
-
-          <p class="guide-row">
-            <span style="font-weight: 600">Ghi chú:</span> Chức năng in hóa đơn
-            hỗ trợ tốt hơn với trình duyệt Chrome.
-          </p>
-        </div>
-
-        <div class="modal-footer">
-          <button class="btn-close-modal" data-modal="modal-in-hd">
-            Đã hiểu
-          </button>
-        </div>
-      </div>
-    </div>
-
     <div id="modal-tai-hd" class="modal">
       <div class="modal-container">
         <div class="modal-header">
-          <h5 class="modal-title">
-            Hướng dẫn Tải hóa đơn gốc, hóa đơn định dạng PDF và xem hóa đơn trên
-            máy tính
-          </h5>
+          <h5 class="modal-title">Hướng dẫn Tải hóa đơn gốc và Tải file pdf</h5>
           <i
             class="fa-solid fa-xmark icon-close-modal"
             data-modal="modal-tai-hd"
@@ -373,44 +327,88 @@
         </div>
 
         <div class="modal-content">
-          <p class="guide-row">
-            Ngoài chức năng xem hóa đơn ngày trên portal, in hóa đơn chuyển đổi.
-            Hệ thống còn hỗ trợ khách hàng tải hóa đơn gốc về máy để xem offline
-            nếu cần.
+           <p>
+                Ngoài chức năng xem hóa đơn, in hóa đơn.
+                Hệ thống còn hỗ trợ khách hàng tải hóa đơn gốc về máy để xem offline
+                nếu cần.
           </p>
 
-          <p>
-            Chức năng chỉ áp dụng với hóa đơn
-            <span style="font-weight: 600">đã thanh toán tiền</span>.
-          </p>
-
-          <p>
-            Ở danh sách hóa đơn hiện thị sau khi lựa chọn tìm kiếm, quý khách
-            hàng click vào biểu tượng "Tải hóa đơn" để tải hóa đơn về máy.
+          <p >
+            Chức năng áp dụng với hóa đơn
+            <span style="font-weight: 600">đã thanh toán tiền</span>. Để tải hóa
+            đơn gốc ở dạng *.xml hoặc dạng pdf, ở ô hành động quý khách hàng
+            click vào biểu tượng
+            <i
+              class="fa-solid fa-download"
+              style="color: #007bff; border-color: #007bff"
+            ></i>
+            - <span>Tải xml</span> hoặc biểu tượng
+            <i
+              class="fa-regular fa-file-pdf"
+              style="color: #007bff; border-color: #007bff"
+            ></i>
+            - <span>Tải pdf</span>.
           </p>
 
           <img
             class="guide-row"
-            src="./dashboard/asset/img/hd02.jpg"
+            src="./dashboard/asset/img/hdportal11.png"
             alt=""
             style="width: 100%"
           />
 
-          <p class="guide-row">
-            Hóa đơn gốc tải về là file định dạng *.inv, để xem hóa đơn trên máy
-            tính quý khách hàng cần cài đặt phần mềm Einvoice Viewer
-            <a href="./dashboard/asset/soft/EInvoiceViewer.rar">tại đây</a>.
-          </p>
-
-          <p class="guide-row">
-            Quý khách hàng cũng có thể tải hóa đơn định dạng PDF về để xem bằng
-            cách click vào biểu tượng file PDF trên danh sách hóa đơn hiển thị
-            theo lựa chọn tìm kiếm.
-          </p>
         </div>
 
         <div class="modal-footer">
           <button class="btn-close-modal" data-modal="modal-tai-hd">
+            Đã hiểu
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-in-hd" class="modal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            Hướng dẫn In hóa đơn
+          </h5>
+          <i
+            class="fa-solid fa-xmark icon-close-modal"
+            data-modal="modal-in-hd"
+          ></i>
+        </div>
+
+        <div class="modal-content">
+          <p>
+            Quý khách hàng cần thực hiện thanh toán hóa đơn để có thể in được hóa đơn có serial - số hóa đơn.
+            Nếu không, hóa đơn được in ra sẽ không có serial và tên hóa đơn sẽ là "Thông báo tiền nước".
+          </p>
+
+          <p>
+            Ở danh sách hóa đơn hiển thị sau khi lựa chọn tìm kiếm, quý khách
+            hàng click vào biểu tượng <i class="fa-solid fa-print" style="color: #007bff; border-color: #007bff;"></i> - <span>In hóa đơn</span>.
+          </p>
+
+          <p>
+            Quý khách hàng chọn "Lưu dưới dạng PDF" và mở rộng "Chế độ cài đặt khác" rồi đánh dấu "Ô nền" để có thể in hóa đơn có màu.
+          </p>
+
+          <img
+            class="guide-row"
+            src="./dashboard/asset/img/hdmodal3.PNG"
+            alt=""
+            style="width: 100%"
+          />
+
+          <p>
+            <span style="font-weight: 600">Ghi chú:</span> Chức năng in hóa đơn
+            hỗ trợ tốt hơn với trình duyệt Chrome.
+          </p>
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn-close-modal" data-modal="modal-in-hd">
             Đã hiểu
           </button>
         </div>

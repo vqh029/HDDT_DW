@@ -39,7 +39,7 @@ body {
   line-height: 1.5;
   background-color: var(--light-blue-gray);
   /* background: radial-gradient(circle, rgba(160,222,255,1) 0%, rgba(78,151,225,1) 0%, rgba(85,175,251,1) 100%); */
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif!important;
   font-weight: 400;
   font-size: 16px;
   color: var(--light-black);
@@ -97,7 +97,7 @@ body {
   position: sticky;
   height: 92px;
   width: 100%;
-  background-color: var(--light-blue-gray);
+  background-color: #fff;
   top: 0;
   left: 0;
   right: 0;
@@ -164,7 +164,7 @@ body {
   list-style-type: none;
   height: 100%;
   align-items: center;
-  background-color: var(--light-blue-gray);
+  background-color: #fff;
   cursor: pointer;
   user-select: none;
   font-weight: 500;
@@ -244,10 +244,8 @@ body {
   max-height: 450px;
 }
 
-.box-banner-head .banner-head-detail {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1280px;
+.box-banner-head .banner-head-detail img{
+    width: 100%;
 }
 
 /* <--------------- CSS for BODY CONTENT-TITLE ---------------> */
