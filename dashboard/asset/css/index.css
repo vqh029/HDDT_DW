@@ -7,6 +7,16 @@
     box-sizing: border-box;
 }
 
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
 :root{
     --primary-blue: #4e97e1;
     --dark-blue: #2273C5;
@@ -41,6 +51,21 @@ body{
     clear: both;
 }
 
+.modal-backdrop{
+    display: none;
+}
+
+.btn-old{
+    background-color: coral;
+}
+
+.btn-old:hover{
+    background-color: rgb(238, 120, 78);
+}
+.btn-old>a{
+    color: #fff;
+}
+
 /* <--------------- CSS for NAV ---------------> */
 #navbar{
     position: sticky;
@@ -56,6 +81,7 @@ body{
 
 #navbar .nav-container {
     max-width: 1280px;
+    max-height: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;

@@ -1,266 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portal HĐĐT DAWACO</title>
-    <link rel="stylesheet" href="./dashboard/asset/css/index.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
-    <script src="https://kit.fontawesome.com/917e769a74.js" crossorigin="anonymous"></script>   
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./dashboard/asset/css/index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+    <script
+      src="https://kit.fontawesome.com/917e769a74.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <nav id="navbar">
-        <div class="nav-container">
-            <div class="custom-menu">
-                <div class="web-description">
-                    <a href="https://dawaco.com.vn">
-                        <img id="web-brand-logo" src="./dashboard/asset/img/logodawaco_70px.png" alt="brand DAWACO">
-                    </a>
-                    <div class="web-name">
-                        <h1 class="web-title"><a href="#">Hóa đơn điện tử</a></h1>
-                        <h2 class="web-brand-name">Công ty Cổ phần Cấp nước Đà Nẵng</h2>
-                    </div>
-                </div>
-
-                <div class="navbar-menu">
-                    <ul class="main-menu">
-                        <li class="menu-item">
-                            <span class="menu-item-name"><a href="./index.html"><i class="fa-solid fa-house"></i></a></span>
-                        </li>
-
-                        <li class="menu-item">
-                            <span class="menu-item-name">HƯỚNG DẪN</span>
-                            <i class="fa-solid fa-angle-down" style="margin: 6px;"></i>
-                            <ul class="sub-menu">
-                                <li><a class="sub-menu-item" data-modal="modal-xem-hd">Xem Hóa Đơn</a></li>
-                                <li><a class="sub-menu-item" data-modal="modal-in-hd">In Hóa Đơn Chuyển Đổi</a></li>
-                                <li><a class="sub-menu-item" data-modal="modal-tai-hd">Tải Hóa Đơn Gốc</a></li>
-                                <li><a href="./dashboard/asset/soft/EInvoiceViewer.rar">Phần Mềm Xem Hóa Đơn</a></li>
-                            </ul>   
-                        </li>
-
-                        <li class="menu-item">
-                            <span class="menu-item-name"><a href="./lienhe.html">LIÊN HỆ</a></span>
-                        </li>
-                    </ul>
-                </div>
+      <div class="nav-container">
+        <div class="custom-menu">
+          <div class="web-description">
+            <a href="https://dawaco.com.vn">
+              <img
+                id="web-brand-logo"
+                src="./dashboard/asset/img/logodawaco_70px.png"
+                alt="brand DAWACO"
+              />
+            </a>
+            <div class="web-name">
+              <h3 class="web-title"><a href="#">Hóa đơn điện tử</a></h3>
+              <h3 class="web-brand-name">Công ty Cổ phần Cấp nước Đà Nẵng</h3>
             </div>
+          </div>
+
+          <div class="navbar-menu">
+            <ul class="main-menu">
+              <li class="menu-item">
+                <span class="menu-item-name"
+                  ><a href="./index.html"><i class="fa-solid fa-house"></i></a
+                ></span>
+              </li>
+
+              <li class="menu-item">
+                <span class="menu-item-name">HƯỚNG DẪN</span>
+                <i class="fa-solid fa-angle-down" style="margin: 6px"></i>
+                <ul class="sub-menu">
+                  <li>
+                    <a class="sub-menu-item" data-modal="modal-xem-hd"
+                      >Xem Hóa Đơn</a
+                    >
+                  </li>
+                  <li>
+                    <a class="sub-menu-item" data-modal="modal-in-hd"
+                      >In Hóa Đơn Chuyển Đổi</a
+                    >
+                  </li>
+                  <li>
+                    <a class="sub-menu-item" data-modal="modal-tai-hd"
+                      >Tải Hóa Đơn Gốc</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./dashboard/asset/soft/EInvoiceViewer.rar"
+                      >Phần Mềm Xem Hóa Đơn</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="menu-item">
+                <span class="menu-item-name"
+                  ><a href="./lienhe.html">LIÊN HỆ</a></span
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="clearfix"></div>   
+      </div>
+      <div class="clearfix"></div>
     </nav>
-    
+
     <div id="bodycontent">
-        <div class="body-container">
-            <div class="box-banner-head">
-                <div class="banner-head-detail">
-                    <img src="./dashboard/asset/img/header.png" alt="">
-                </div>
-            </div>
-
-            <div class="content-title">
-                <div class="content-title-heading">
-                    <h3>TRA CỨU HÓA ĐƠN ĐIỆN TỬ</h3>
-                </div>   
-            </div>
-
-            <div class="line-item"></div>
-            <div class="box-login">
-                <div class="box-login-detail">
-                    <form>
-                        <div class="box-detail">
-                            <label class="label-input required" for="IDCustomer">Mã khách hàng</label><br>
-                            <input class="box-input" type="text" id="IDCustomer" name="IDCustomer" placeholder="Nhập mã khách hàng" 
-                            pattern="[0-9]+" maxlength="9" required><br>
-                        </div>
-
-                        <div class="box-detail">
-                            <label class="label-input required" for="Password">Mật khẩu</label><br>
-                            <input class="box-input" type="password" id="Password" placeholder="Nhập mật khẩu" 
-                            name="Password"  required pattern="^[a-zA-Z0-9#@]*$" title="Không được chứa các ký tự đặc biệt, ngoại trừ #, @">
-                            <i class="fa-solid fa-eye" id="toggle-password"></i>
-                        </div>
-
-                        <div class="box-detail ">
-                            <div class="box-option">
-                                <span><input class="check-saveInfo-input" type="checkbox">Ghi nhớ đăng nhập</span>
-                                <span><a class="link-forget-password" href="#" data-modal="modal-forget-password">Quên mật khẩu</a></span>
-                            </div>
-                        </div>
-
-                        <div class="box-detail">
-                            <button class="box-submit" onclick="onLogin()">Đăng nhập</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+      <div class="body-container">
+        <div class="box-banner-head">
+          <div class="banner-head-detail">
+            <img src="./dashboard/asset/img/header.png" alt="" />
+          </div>
         </div>
+
+        <div class="content-title">
+          <div class="content-title-heading">
+            <h3>TRA CỨU HÓA ĐƠN ĐIỆN TỬ</h3>
+          </div>
+        </div>
+
+        <div class="line-item"></div>
+        <div class="box-login">
+          <div class="box-login-detail">
+            <form>
+              <div class="box-detail">
+                <label class="label-input required" for="IDCustomer"
+                  >Mã khách hàng</label
+                ><br />
+                <input
+                  class="box-input"
+                  type="text"
+                  id="IDCustomer"
+                  name="IDCustomer"
+                  placeholder="Nhập mã khách hàng"
+                  pattern="[0-9]+"
+                  maxlength="9"
+                  required
+                /><br />
+              </div>
+
+              <div class="box-detail">
+                <label class="label-input required" for="Password"
+                  >Mật khẩu</label
+                ><br />
+                <input
+                  class="box-input"
+                  type="password"
+                  id="Password"
+                  placeholder="Nhập mật khẩu"
+                  name="Password"
+                  required
+                  pattern="^[a-zA-Z0-9#@]*$"
+                  title="Không được chứa các ký tự đặc biệt, ngoại trừ #, @"
+                />
+                <i class="fa-solid fa-eye" id="toggle-password"></i>
+              </div>
+
+              <div class="box-detail">
+                <div class="box-option">
+                  <span
+                    ><input class="check-saveInfo-input" type="checkbox" />Ghi
+                    nhớ đăng nhập</span
+                  >
+                  <span
+                    ><a
+                      class="link-forget-password"
+                      href="#"
+                      data-modal="modal-forget-password"
+                      >Quên mật khẩu</a
+                    ></span
+                  >
+                </div>
+              </div>
+
+              <div class="box-detail">
+                <button class="box-submit" onclick="onLogin()">
+                  Đăng nhập
+                </button>
+              </div>
+            </form>
+
+            <div class="box-detail">
+                <button class="box-submit" style="background-color: rgb(255, 127, 80);">
+                  Tra cứu HĐ từ 2022 trở về trước
+                </button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông báo</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Nhằm nâng cao chất lượng dịch vụ, DAWACO đang tiến hành nâng cấp hệ thống phát hành HĐĐT. DAWACO xin trân trọng thông báo tới Quý khách hàng được biết về thời gian triển khai hệ thống mới:</p>
+            <ul>
+                <li>
+                    <p>Thời gian triển khai hệ thống mới: 01/01/2023.</p>
+                </li>
+
+                <li>
+                    <p>Thời gian đóng hệ thống cũ: cho đến khi có thông báo tiếp theo.</p>
+                </li>
+
+                <li>
+                    <p>Đối với hóa đơn từ năm 2022 trở về trước, Quý khách hàng tiếp tục tra cứu hóa đơn trên hệ thống cũ.</p>
+                </li>
+
+                <li>
+                    <p>Đối với hóa đơn từ năm 2023 trở đi, Quý khách hàng sử dụng hệ thống mới để tra cứu hóa đơn.</p>
+                </li>
+            </ul>
+            <p>DAWACO xin cảm ơn và xin kính chúc Quý khách hàng một năm mới an khang, thịnh vượng.</p>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn  btn-old">
+              <a href="https://hddt-old.dawaco.com.vn/Login.aspx?ReturnUrl=%2f">Hệ thống cũ</a>
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Hệ thống mới
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="modal-xem-hd" class="modal">
-        <div class="modal-container">
-            <div class="modal-header">
-                <h5 class="modal-title">Hướng dẫn xem hóa đơn điện tử</h5>
-                <i class="fa-solid fa-xmark icon-close-modal" data-modal="modal-xem-hd"></i>
-            </div>
-
-            <div class="modal-content">
-                <p class="guide-row">Để nhận hóa đơn điện tử, quý khách hàng cần đăng nhập vào hệ thống portal hóa đơn điện tử 
-                    với tài khoản được Dawaco cung cấp.
-                </p>
-
-                <img class="guide-row" src="./dashboard/asset/img/hd01.png" alt="" style="width: 100%;">
-
-                <p class="guide-row">
-                    Sau khi đăng nhập thành công, quý khách hàng lựa chọn tháng cần xem hóa đơn/thông báo thanh toán tiền nước và click vào "Tìm kiếm hóa đơn"
-                </p>
-
-                <img class="guide-row" src="./dashboard/asset/img/hd02.jpg" alt="" style="width: 100%;">
-
-                <p class="guide-row">
-                    Trên danh sách hóa đơn hiện thị ra, quý khác hàng click vào biểu tượng "Xem hóa đơn" để xem chi tiết nội dung hóa đơn/thống báo thanh toán tiền nước.
-                </p>
-
-                <img class="guide-row" src="./dashboard/asset/img/hd03.jpg" alt="" style="width: 100%;">
-            </div>
-
-            <div class="modal-footer">
-                <button class="btn-close-modal" data-modal="modal-xem-hd">Đã hiểu</button>
-            </div>
+      <div class="modal-container">
+        <div class="modal-header">
+          <h5 class="modal-title">Hướng dẫn xem hóa đơn điện tử</h5>
+          <i
+            class="fa-solid fa-xmark icon-close-modal"
+            data-modal="modal-xem-hd"
+          ></i>
         </div>
+
+        <div class="modal-content">
+          <p class="guide-row">
+            Để nhận hóa đơn điện tử, quý khách hàng cần đăng nhập vào hệ thống
+            portal hóa đơn điện tử với tài khoản được Dawaco cung cấp.
+          </p>
+
+          <img
+            class="guide-row"
+            src="./dashboard/asset/img/hd01.png"
+            alt=""
+            style="width: 100%"
+          />
+
+          <p class="guide-row">
+            Sau khi đăng nhập thành công, quý khách hàng lựa chọn tháng cần xem
+            hóa đơn/thông báo thanh toán tiền nước và click vào "Tìm kiếm hóa
+            đơn"
+          </p>
+
+          <img
+            class="guide-row"
+            src="./dashboard/asset/img/hd02.jpg"
+            alt=""
+            style="width: 100%"
+          />
+
+          <p class="guide-row">
+            Trên danh sách hóa đơn hiện thị ra, quý khác hàng click vào biểu
+            tượng "Xem hóa đơn" để xem chi tiết nội dung hóa đơn/thống báo thanh
+            toán tiền nước.
+          </p>
+
+          <img
+            class="guide-row"
+            src="./dashboard/asset/img/hd03.jpg"
+            alt=""
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn-close-modal" data-modal="modal-xem-hd">
+            Đã hiểu
+          </button>
+        </div>
+      </div>
     </div>
 
     <div id="modal-in-hd" class="modal">
-        <div class="modal-container">
-            <div class="modal-header">
-                <h5 class="modal-title">Hướng dẫn In hóa đơn điện tử</h5>
-                <i class="fa-solid fa-xmark icon-close-modal" data-modal="modal-in-hd"></i>
-            </div>
-
-            <div class="modal-content">
-                <p class="guide-row">Chức năng áp dụng với hóa đơn <span style="font-weight: 600;">đã thanh toán tiền</span>. Để in hóa đơn chuyển đổi lưu trữ, 
-                    ở chức năng xem hóa đơn quý khách hàng click vào "IN HÓA ĐƠN CHUYỂN ĐỔI"
-                </p>
-
-                <img class="guide-row" src="./dashboard/asset/img/hd03.jpg" alt="" style="width: 100%;">
-
-                <p class="guide-row">
-                    Ở form in hóa đơn hiện ra, quý khách lựa chọn máy in hiện tại. Sau đó chọn vào "More Setting" -> "Background Graphics". Sau đó click vào Print để in hóa đơn ra giấy.
-                </p>
-
-                <img class="guide-row" src="./dashboard/asset/img/hd04.jpg" alt="" style="width: 100%;">
-
-                <p class="guide-row">
-                    <span style="font-weight: 600;">Ghi chú:</span> Chức năng in hóa đơn hỗ trợ tốt hơn với trình duyệt Chrome.
-                </p>
-            </div>
-
-            <div class="modal-footer">
-                <button class="btn-close-modal" data-modal="modal-in-hd">Đã hiểu</button>
-            </div>
+      <div class="modal-container">
+        <div class="modal-header">
+          <h5 class="modal-title">Hướng dẫn In hóa đơn điện tử</h5>
+          <i
+            class="fa-solid fa-xmark icon-close-modal"
+            data-modal="modal-in-hd"
+          ></i>
         </div>
+
+        <div class="modal-content">
+          <p class="guide-row">
+            Chức năng áp dụng với hóa đơn
+            <span style="font-weight: 600">đã thanh toán tiền</span>. Để in hóa
+            đơn chuyển đổi lưu trữ, ở chức năng xem hóa đơn quý khách hàng click
+            vào "IN HÓA ĐƠN CHUYỂN ĐỔI"
+          </p>
+
+          <img
+            class="guide-row"
+            src="./dashboard/asset/img/hd03.jpg"
+            alt=""
+            style="width: 100%"
+          />
+
+          <p class="guide-row">
+            Ở form in hóa đơn hiện ra, quý khách lựa chọn máy in hiện tại. Sau
+            đó chọn vào "More Setting" -> "Background Graphics". Sau đó click
+            vào Print để in hóa đơn ra giấy.
+          </p>
+
+          <img
+            class="guide-row"
+            src="./dashboard/asset/img/hd04.jpg"
+            alt=""
+            style="width: 100%"
+          />
+
+          <p class="guide-row">
+            <span style="font-weight: 600">Ghi chú:</span> Chức năng in hóa đơn
+            hỗ trợ tốt hơn với trình duyệt Chrome.
+          </p>
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn-close-modal" data-modal="modal-in-hd">
+            Đã hiểu
+          </button>
+        </div>
+      </div>
     </div>
 
     <div id="modal-tai-hd" class="modal">
-        <div class="modal-container">
-            <div class="modal-header">
-                <h5 class="modal-title">Hướng dẫn Tải hóa đơn gốc, hóa đơn định dạng PDF và xem hóa đơn trên máy tính</h5>
-                <i class="fa-solid fa-xmark icon-close-modal" data-modal="modal-tai-hd"></i>
-            </div>
-
-            <div class="modal-content">
-                <p class="guide-row">Ngoài chức năng xem hóa đơn ngày trên portal, in hóa đơn chuyển đổi. 
-                    Hệ thống còn hỗ trợ khách hàng tải hóa đơn gốc về máy để xem offline nếu cần.
-                </p>
-
-                <p>
-                    Chức năng chỉ áp dụng với hóa đơn <span style="font-weight: 600;">đã thanh toán tiền</span>.
-                </p>
-
-                <p>
-                    Ở danh sách hóa đơn hiện thị sau khi lựa chọn tìm kiếm, quý khách hàng click vào biểu tượng "Tải hóa đơn" để tải hóa đơn về máy.
-                </p>
-                
-                <img class="guide-row" src="./dashboard/asset/img/hd02.jpg" alt="" style="width: 100%;">
-
-                <p class="guide-row">
-                    Hóa đơn gốc tải về là file định dạng *.inv, để xem hóa đơn trên máy tính quý khách hàng cần 
-                    cài đặt phần mềm Einvoice Viewer <a href="./dashboard/asset/soft/EInvoiceViewer.rar">tại đây</a>.
-                </p>
-
-                <p class="guide-row">
-                    Quý khách hàng cũng có thể tải hóa đơn định dạng PDF về để xem bằng cách click vào biểu tượng file PDF trên danh sách hóa đơn hiển thị theo lựa chọn tìm kiếm.
-                </p>
-            </div>
-
-            <div class="modal-footer">
-                <button class="btn-close-modal" data-modal="modal-tai-hd">Đã hiểu</button>
-            </div>
+      <div class="modal-container">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            Hướng dẫn Tải hóa đơn gốc, hóa đơn định dạng PDF và xem hóa đơn trên
+            máy tính
+          </h5>
+          <i
+            class="fa-solid fa-xmark icon-close-modal"
+            data-modal="modal-tai-hd"
+          ></i>
         </div>
+
+        <div class="modal-content">
+          <p class="guide-row">
+            Ngoài chức năng xem hóa đơn ngày trên portal, in hóa đơn chuyển đổi.
+            Hệ thống còn hỗ trợ khách hàng tải hóa đơn gốc về máy để xem offline
+            nếu cần.
+          </p>
+
+          <p>
+            Chức năng chỉ áp dụng với hóa đơn
+            <span style="font-weight: 600">đã thanh toán tiền</span>.
+          </p>
+
+          <p>
+            Ở danh sách hóa đơn hiện thị sau khi lựa chọn tìm kiếm, quý khách
+            hàng click vào biểu tượng "Tải hóa đơn" để tải hóa đơn về máy.
+          </p>
+
+          <img
+            class="guide-row"
+            src="./dashboard/asset/img/hd02.jpg"
+            alt=""
+            style="width: 100%"
+          />
+
+          <p class="guide-row">
+            Hóa đơn gốc tải về là file định dạng *.inv, để xem hóa đơn trên máy
+            tính quý khách hàng cần cài đặt phần mềm Einvoice Viewer
+            <a href="./dashboard/asset/soft/EInvoiceViewer.rar">tại đây</a>.
+          </p>
+
+          <p class="guide-row">
+            Quý khách hàng cũng có thể tải hóa đơn định dạng PDF về để xem bằng
+            cách click vào biểu tượng file PDF trên danh sách hóa đơn hiển thị
+            theo lựa chọn tìm kiếm.
+          </p>
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn-close-modal" data-modal="modal-tai-hd">
+            Đã hiểu
+          </button>
+        </div>
+      </div>
     </div>
 
     <div id="modal-forget-password" class="modal">
-        <div class="modal-container modal-container-s">
-            <div class="modal-header">
-                <h5 class="modal-title">Hướng dẫn Xử lý khi quên mật khẩu</h5>
-                <i class="fa-solid fa-xmark icon-close-modal" data-modal="modal-forget-password"></i>
-            </div>
-
-            <div class="modal-content">
-                <p class="guide-row">Quý khách hàng vui lòng liên hệ bộ phận chăm sóc khách hàng của Dawaco
-                </p>
-
-                <p>
-                    <span style="font-weight: 600;">1900 2345 22</span>
-                </p>
-            </div>
-
-            <div class="modal-footer">
-                <button class="btn-close-modal" data-modal="modal-forget-password">Đã hiểu</button>
-            </div>
+      <div class="modal-container modal-container-s">
+        <div class="modal-header">
+          <h5 class="modal-title">Hướng dẫn Xử lý khi quên mật khẩu</h5>
+          <i
+            class="fa-solid fa-xmark icon-close-modal"
+            data-modal="modal-forget-password"
+          ></i>
         </div>
+
+        <div class="modal-content">
+          <p class="guide-row">
+            Quý khách hàng vui lòng liên hệ bộ phận chăm sóc khách hàng của
+            Dawaco
+          </p>
+
+          <p>
+            <span style="font-weight: 600">1900 2345 22</span>
+          </p>
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn-close-modal" data-modal="modal-forget-password">
+            Đã hiểu
+          </button>
+        </div>
+      </div>
     </div>
 
     <footer>
-        <div class="footer-container-1">
-            <div class="footer-detail">
-                <p>Công ty Cổ phần Cấp nước Đà Nẵng (DAWACO)</p>
-                <div class="footer-list">
-                    <ul class="list-detail col-1">
-                        <li>
-                            <i class="fa-solid fa-map"></i>
-                            <span>57 Xô Viết Nghệ Tĩnh, P. Hòa Cường Nam, Q. Hải Châu, TP. Đà Nẵng</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-phone"></i>
-                            <span>Điện thoại: 0236.369.6632</span> 
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-fax"></i>
-                            <span>Fax: 0236.369.7222</span>
-                        </li>
-                    </ul>
+      <div class="footer-container-1">
+        <div class="footer-detail">
+          <p>Công ty Cổ phần Cấp nước Đà Nẵng (DAWACO)</p>
+          <div class="footer-list">
+            <ul class="list-detail">
+              <li>
+                <i class="fa-solid fa-map"></i>
+                <span
+                  >57 Xô Viết Nghệ Tĩnh, P. Hòa Cường Nam, Q. Hải Châu, TP. Đà
+                  Nẵng</span
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <span>Điện thoại: 0236.369.6632</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-fax"></i>
+                <span>Fax: 0236.369.7222</span>
+              </li>
+            </ul>
 
-                    <ul class="list-detail col-2">
-                        <li>
-                            <i class="fa-solid fa-envelope"></i> Email: 
-                            <a href="mailto:hddt@dawaco.com.vn">hddt@dawaco.com.vn</a>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-desktop"></i> Website:
-                            <a href="https://dawaco.com.vn">dawaco.com.vn</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <ul class="list-detail" style="margin-left: 16px">
+              <li>
+                <i class="fa-solid fa-envelope"></i> Email:
+                <a href="mailto:hddt@dawaco.com.vn">hddt@dawaco.com.vn</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-desktop"></i> Website:
+                <a href="https://dawaco.com.vn">dawaco.com.vn</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
 
-        <div class="footer-container-2">
-            <p class="copyright">© 2022 DAWACO - All Rights Reserved - Design by TT CNTT</p>
-        </div>
+      <div class="footer-container-2">
+        <p class="copyright">
+          © 2022 DAWACO - All Rights Reserved - Design by TT CNTT
+        </p>
+      </div>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      $(window).on("load", function () {
+        $("#staticBackdrop").modal("show");
+      });
+    </script>
 
     <script src="./dashboard/asset/js/index.js"></script>
-</body>
+  </body>
 </html>
