@@ -111,15 +111,19 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  height: 100%;
 }
 
 #navbar .nav-container .custom-menu {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 #navbar .nav-container .web-description {
   font-family: "Anek Latin", sans-serif;
   display: flex;
+  align-items: center;
   padding: 4px;
 }
 
@@ -147,13 +151,14 @@ body {
 .web-name .web-title > a,
 .web-name .web-title > a:visited {
   text-decoration: none;
-  color: var(--orange);
+  color: var(--primary-blue);
 }
 
 .web-name .web-brand-name {
   color: var(--primary-blue);
   cursor: pointer;
   user-select: none;
+  display: none;
 }
 
 /* <--------------- CSS for Drop Down Menu Navbar ---------------> */
