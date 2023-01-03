@@ -200,65 +200,6 @@ body {
   background-color: var(--primary-blue);
 }
 
-/* 
-.main-menu > .menu-item {
-  display: flex;
-  height: 100%;
-  position: relative;
-  align-items: center;
-  float: left;
-  margin: 0 16px;
-}
-
-.main-menu .menu-item:hover > .sub-menu {
-  display: block;
-}
-
-.menu-item:hover > .menu-item-name,
-.menu-item:hover > .menu-item-name a,
-.menu-item:hover > i {
-  color: var(--primary-blue) !important;
-}
-
-.menu-item .menu-item-name,
-.menu-item .menu-item-name > a {
-  font-size: large;
-}
-.menu-item .menu-item-name > a,
-.menu-item .menu-item-name > a:visited {
-  text-decoration: none;
-  color: var(--light-black);
-}
-
-.main-menu .menu-item .sub-menu {
-  list-style-type: none;
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: -16px;
-
-  min-width: 180px;
-  box-shadow: 0 4px 6px rgb(0 0 0 / 15%);
-  background-color: #f6f9ff;
-}
-
-.main-menu .sub-menu a {
-  display: block;
-  padding: 8px 16px;
-  text-decoration: none;
-  font-weight: 400;
-  color: var(--light-black);
-}
-
-.main-menu .sub-menu a:hover {
-  color: var(--primary-blue);
-}
-
-.main-menu .sub-menu li {
-  outline: 0;
-  border: none;
-} */
-
 /* <--------------- CSS for BODY CONTENT ---------------> */
 #bodycontent {
   height: auto;
