@@ -592,7 +592,19 @@ footer > .footer-container-2 .copyright {
 }
 
 /* Responsive */
-@media screen and (max-width: 992px) {
+
+@media screen and (max-width: 1399.98px) and (min-width: 992px) {
+  #navbar .nav-container .custom-menu {
+    padding: 4px 20px;
+  }
+
+  footer .footer-container-1 {
+    padding: 0 20px;
+  }
+}
+
+
+@media screen and (max-width: 991.98px) {
   #navbar {
     height: fit-content;
   }
@@ -615,7 +627,7 @@ footer > .footer-container-2 .copyright {
 
   #navbar #web-brand-logo{
     padding-left: 4px;
-    width: 60%;
+    width: 65%;
   }
 
   #navbar .dropdown-menu {
@@ -644,7 +656,7 @@ footer > .footer-container-2 .copyright {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575.98px) {
   .content-title .content-title-heading > h3{
     font-size: 20px;
   }
